@@ -1,0 +1,70 @@
+.option_box{
+    width:100%;
+    height: auto;
+    display: flex;
+
+}
+.option_son{
+    width:33.3%;
+    height:700px;
+    /* background: rgba(0,0,0,.3); */
+    flex-wrap: wrap ;
+
+}
+.option_box_lef{
+    /* background:red; */
+    display:flex;
+    flex-wrap: wrap ;
+}
+.option_box_mid{
+    /* background:green; */
+}
+.option_box_rig{
+    padding-left: 50px;
+}
+.option_name{
+    line-height: 40px;
+}
+.option_name_mid{
+    line-height: 32px;
+}
+.option{
+    display: flex;
+}
+.input{
+    width:60%;
+    height: 40px;
+}
+.input_point{
+    width:40%;
+    /* height: 40px; */
+}
+.option_setting{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap ;
+}
+.setting_box{
+    width:48%;
+    height: 64px;
+    /* border:1px solid; */
+    border-radius: 10px;
+    margin:1px;
+    /* background:#CAC8C6; */
+    
+}
+.black{
+    display: flex;
+}
+.now{
+    display: flex;
+    margin-top:15px;
+}
+.black_num{
+    width:100px;
+    
+}
+.option_right{
+    margin-bottom: 45px;
+}
