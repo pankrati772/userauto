@@ -11,8 +11,9 @@
         v-on:right="getright"
         
         ></option-rig>
-      <!-- <div class="option_son option_box_mid"></div> -->
-      <!-- <div class="option_son option_box_rig"></div> -->
+        <div class="btn">
+          <el-button type="primary" @click="pullAll">保存方案</el-button>
+        </div>
   </div>
 </template>
 
@@ -25,6 +26,10 @@ export default {
   data () {
     return {
       msg: '测试方案1',
+      optionmsg:{},
+      rightMsg:{},
+      leftMsg:{},
+      midMsg:{},
       
     }
   },
@@ -34,16 +39,36 @@ export default {
   methods:{
     getright(msg){
           console.log(msg)
+          this.rightMsg={
+            right:msg
+          }
+          
+
       },
     getleft(msg){
           console.log(msg)
+          this.leftMsg={
+            left:msg
+          }
+          
     },
     getmid(msg){
           console.log(msg)
+          this.midMsg={
+            mid:msg
+          }
+          
+    },
+    pullAll(){
+      this.optionmsg={
+        right:this.rightMsg,
+        mid:this.midMsg,
+        left:this.leftMsg
+      }
+      console.log(this.optionmsg)
     }
     
   }
-  
 }
 </script>
 

@@ -1,11 +1,19 @@
 <template>
   <div class="option_box">
       
-        <option-left v-bind:msg="msg"></option-left>
-        <option-mid></option-mid>
-        <option-rig></option-rig>
-      <!-- <div class="option_son option_box_mid"></div> -->
-      <!-- <div class="option_son option_box_rig"></div> -->
+        <option-left v-bind:msg="msg"
+        v-on:left="getleft"
+        ></option-left>
+        <option-mid
+        v-on:mid="getmid"
+        ></option-mid>
+        <option-rig 
+        v-on:right="getright"
+        
+        ></option-rig>
+        <div class="btn">
+          <el-button type="primary" @click="pullAll">保存方案</el-button>
+        </div>
   </div>
 </template>
 
@@ -17,11 +25,47 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '测试方案4'
+      msg: '测试方案4',
+      optionmsg:{},
+      rightMsg:{},
+      leftMsg:{},
+      midMsg:{},
     }
   },
   components:{
     optionLeft,optionMid,optionRig
+  },
+  methods:{
+    getright(msg){
+          console.log(msg)
+          this.rightMsg={
+            right:msg
+          }
+          
+
+      },
+    getleft(msg){
+          console.log(msg)
+          this.leftMsg={
+            left:msg
+          }
+          
+    },
+    getmid(msg){
+          console.log(msg)
+          this.midMsg={
+            mid:msg
+          }
+          
+    },
+    pullAll(){
+      this.optionmsg={
+        right:this.rightMsg,
+        mid:this.midMsg,
+        left:this.leftMsg
+      }
+      console.log(this.optionmsg)
+    }
   }
 }
 </script>

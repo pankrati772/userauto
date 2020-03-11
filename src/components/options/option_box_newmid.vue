@@ -29,11 +29,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num2_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num2_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num2_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num2_now">
                   
               </div>
           </div>
@@ -41,11 +41,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num3_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num3_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num3_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num3_now">
                   
               </div>
           </div>
@@ -53,11 +53,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num4_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num4_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num4_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num4_now">
                   
               </div>
           </div>
@@ -65,11 +65,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num5_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num5_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num5_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num5_now">
                   
               </div>
           </div>
@@ -77,11 +77,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num6_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num6_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num6_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num6_now">
                   
               </div>
           </div>
@@ -89,11 +89,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num7_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num7_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num7_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num7_now">
                   
               </div>
           </div>
@@ -101,11 +101,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num8_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num8_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num8_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num8_now">
                   
               </div>
           </div>
@@ -113,11 +113,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num9_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num9_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num9_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num9_now">
                   
               </div>
           </div>
@@ -125,11 +125,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num10_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num10_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num10_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num10_now">
                   
               </div>
           </div>
@@ -137,11 +137,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num11_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num11_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num11_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num11_now">
                   
               </div>
           </div>
@@ -149,11 +149,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num12_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num12_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num12_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num12_now">
                   
               </div>
           </div>
@@ -161,11 +161,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num13_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num13_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num13_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num13_now">
                   
               </div>
           </div>
@@ -173,11 +173,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num14_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num14_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num14_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num14_now">
                   
               </div>
           </div>
@@ -185,11 +185,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num15_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num15_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num15_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num15_now">
                   
               </div>
           </div>
@@ -197,11 +197,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num16_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num16_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num16_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num16_now">
                   
               </div>
           </div>
@@ -209,11 +209,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num17_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num17_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num17_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num17_now">
                   
               </div>
           </div>
@@ -221,11 +221,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num18_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num18_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num18_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num18_now">
                   
               </div>
           </div>
@@ -233,11 +233,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num19_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num19_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num19_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num19_now">
                   
               </div>
           </div>
@@ -245,11 +245,11 @@
               <div class="black">
                   <div class="tit">黑　&#12288;体 : </div>
                   
-                  <input type="number" class="black_num" min="30" max="45" v-model="num20_black">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num20_black">
               </div>
               <div class="now">
                   <div class="tit">实际温度 : </div>
-                  <input type="number" class="black_num" min="30" max="45" v-model="num20_now">
+                  <input type="number" class="black_num" @blur="pull" min="30" max="45" v-model="num20_now">
                   
               </div>
           </div>

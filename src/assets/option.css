@@ -68,3 +68,8 @@
 .option_right{
     margin-bottom: 45px;
 }
+.btn{
+    position: absolute;
+    right: 0px;
+    top: 15%;
+}
