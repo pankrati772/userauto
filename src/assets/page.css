@@ -1,0 +1,14 @@
+.input_box{
+    display: flex;
+    width: 100%;
+}
+.table{
+    width:30;
+    margin:0 30px;
+}
+.table_left{
+    margin-left:80px;
+}
+.page_btn{
+    margin:0 50%;
+}

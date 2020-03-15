@@ -1,6 +1,8 @@
 <template>
     <div class="box">   
         <h1>已连接到机型:{{msg}}</h1>
+
+        <el-button type='primary' @click="Connect">连接机器</el-button>
         <div class="show">
           <el-select v-model="value" placeholder="请选择">
             <el-option
@@ -26,19 +28,16 @@
 export default {
     data(){
         return{
-            msg:'KT15.82 DET A SN 10756',
+            msg:'未连接',
             options: [{
-          value: '方案一',
-          label: '方案一'
+          value: '方案配置',
+          label: '方案配置'
         }, {
-          value: '方案二',
-          label: '方案二'
+          value: '本机赋值',
+          label: '本机赋值'
         }, {
-          value: '方案三',
-          label: '方案三'
-        }, {
-          value: '方案四',
-          label: '方案四'
+          value: '用户管理',
+          label: '用户管理'
         }, ],
         value: ''
         }
@@ -48,19 +47,19 @@ export default {
     },
     updated(){
         console.log(this.value)
-        if(this.value==='方案一'){
+        if(this.value==='方案配置'){
             this.$router.push('/Userindex/Option1')
-        }else if(this.value==='方案二'){
+        }else if(this.value==='本机赋值'){
             this.$router.push('/Userindex/Option2')
-        }else if(this.value==='方案三'){
+        }else if(this.value==='用户管理'){
             this.$router.push('/Userindex/Option3')
-        }else{
-            this.$router.push('/Userindex/Option4')
         }
     }
     ,
-    methods:{
-
+    methods:{ 
+        Connect(){
+          this.msg='KT15.82 DET A SN 10756'
+        }
     }
 }
 </script>
